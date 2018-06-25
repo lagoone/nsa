@@ -1,0 +1,427 @@
+<!-- Views-->
+<div class="views">
+<!-- Your main view, should have "view-main" class-->
+<div class="view view-main">
+<!-- Top Navbar-->
+<!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+<div class="pages navbar-through toolbar-through">
+<!-- Page, data-page contains page name-->
+<div data-page="formDisplay" class="page no-swipeback">
+<!-- Scrollable page content-->
+
+<div class="navbar">
+   <div class="navbar-inner">
+      <div class="left">
+         <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel" style="color:black;"> <i class="icon fa fa-bars"></i></a>
+      </div>
+      <!-- We have home navbar without left link-->
+      <div class="center sliding" style="font-weight:bold;">Pratayang Data</div>
+      <div class="right">
+         <!-- Right link contains only icon - additional "icon-only" class--><a href="#" data-panel="right" class="link icon-only open-panel" style="color:black;"> <i class="icon fa fa-bell-o"></i></a>
+      </div>
+   </div>
+</div>
+<input type="hidden" id="noForm" />
+<div class="page-content">
+  <div>
+    <div class="content-block-title">Data Formulir</div>
+      <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Nomor Formulir</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nomor formulir" id="formNomorFormulir" disabled />
+                    <input type="hidden" id="noForm" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Nomor Telepon</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nomor telepon" id="formNomorTelepon" disabled />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    <div class="content-block-title">Jenjang Pendidikan</div>
+      <div class="list-block">
+        <ul>
+          <li>
+            <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Pendidikan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Jenjang" id="formJenjang" disabled/>
+                  </div>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+    <div class="content-block-title">Data Siswa</div>
+        <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Nama Lengkap</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nama lengkap siswa" id="formNamaLengkap" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tempat Lahir</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Tempat lahir" id="formTempatLahir" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tanggal Lahir</div>
+                  <div class="item-input">
+                    <input type="date" placeholder="Tanggal lahir" id="formTanggalLahir" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Jenis Kelamin</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Agama" id="formJenisKelamin" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Alamat</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Alamat" id="formAlamat" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Kota</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Kota" id="formKota" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Agama</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Agama" id="formAgama" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Kewarganegaraan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Kewarganegaraan" id="formKewarganegaraan"  disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Nama Sekolah Asal</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nama sekolah asal" id="formNamaSekolahAsal"  disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Mutasi</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Mutasi" id="formMutasi"  disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div id="tempatMutasi"></div>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">'
+                  <div class="item-title label">Prestasi</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Prestasi" id="formPrestasi"  disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">*Mengetahui dari</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Mengetahui" id="formMengetahui" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    <div class="content-block-title">Data Ayah</div>
+        <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Nama Ayah</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nama ayah" id="formNamaAyah" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Alamat</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Alamat" id="formAlamatAyah" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--<li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tempat Lahir</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Tempat lahir" id="formTempatLahirAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tanggal Lahir</div>
+                  <div class="item-input">
+                    <input type="date" placeholder="Tanggal lahir" id="formTanggalLahirAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>-->
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Pendidikan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Pendidikan" id="formPendidikanAyah" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Agama</div>
+                  <div class="item-input">                    
+                    <input type="text" placeholder="Agama" id="formAgamaAyah" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Kewarganegaraan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Kewarganegaraan" id="formKewarganegaraanAyah" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Pekerjaan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Pekerjaan" id="formPekerjaanAyah" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Instansi</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Instansi" id="formInstansiAyah" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">*Handphone</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Handphone" id="formHandphoneAyah" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+             <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Email</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Email" id="formEmailAyah" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    <div class="content-block-title">Data Ibu</div>
+        <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Nama Ibu</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nama ibu" id="formNamaIbu" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Alamat</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Alamat" id="formAlamatIbu" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--<li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tempat Lahir</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Tempat lahir" id="formTempatLahirIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tanggal Lahir</div>
+                  <div class="item-input">
+                    <input type="date" placeholder="Tanggal lahir" id="formTanggalLahirIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>-->
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Pendidikan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Pendidikan" id="formPendidikanIbu" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Agama</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Agama" id="formAgamaIbu" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Kewarganegaraan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Kewarganegaraan" id="formKewarganegaraanIbu" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Pekerjaan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Pekerjaan" id="formPekerjaanIbu" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Instansi</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Instansi" id="formInstansiIbu" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">*Handphone</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Handphone" id="formHandphoneIbu" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+             <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Email</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Email" id="formEmailIbu" disabled/>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+  </div>
+</div>
+<!-- Path to Framework7 Library JS-->

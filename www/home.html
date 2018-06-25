@@ -1,0 +1,44 @@
+<!-- Views-->
+<div class="views">
+<!-- Your main view, should have "view-main" class-->
+<div class="view view-main">
+<!-- Top Navbar-->
+<!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+<div class="pages navbar-through toolbar-through">
+<!-- Page, data-page contains page name-->
+<div data-page="home" class="page no-swipeback">
+<!-- Scrollable page content-->
+<div class="navbar">
+   <div class="navbar-inner">
+      <div class="left">
+         <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel" style="color:black;"> <i class="icon fa fa-bars"></i></a>
+      </div>
+      <!-- We have home navbar without left link-->
+      <div class="center sliding" style="font-weight:bold;">Dashboard</div>
+      <div class="right">
+         <!-- Right link contains only icon - additional "icon-only" class--><a href="#" data-panel="right" class="link icon-only open-panel" style="color:black;"> <i class="icon fa fa-bell-o"></i></a>
+      </div>
+   </div>
+</div>
+<div  style ="margin-top:70px;">
+  <center  style="margin-right:30px; margin-left:30px;">
+    <center>
+                <img class="lazy" src="img/nation-star-academy.png" style="width:200px; height:100px;"></img> 
+                </center>
+    <h1>Nation Star Academy</h1>
+    <h3 id="ucapan"></h3>
+    <p>Silahkan isi lengkap Data Siswa dan Data Orang Tua Siswa dengan menekan menubar pada sebelah kiri. Atau tekan tombol dibawah/</p>
+    <p><a href="#" class="button"  onclick="gotoPratayang();">Pratayang Data Siswa</a></p>
+    <p><a href="#" onclick="gotoSiswa();" class="button">Ubah Data Siswa</a></p>
+    <p><a href="#" onclick="gotoOrtu();"  class="button">Ubah Data Orang Tua</a></p>
+  </center>
+</div>
+<!-- Path to Framework7 Library JS-->
+<!-- About Popup -->
+<div class="popup popup-edit-home">
+   <div class="content-block">
+      <p>Edit</p>
+      <p><a href="#" class="close-popup">Close popup</a></p>
+      <p>Lorem ipsum dolor ...</p>
+   </div>
+</div>

@@ -1,0 +1,250 @@
+<!-- Views-->
+<div class="views">
+<!-- Your main view, should have "view-main" class-->
+<div class="view view-main">
+<!-- Top Navbar-->
+<!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+<div class="pages navbar-through toolbar-through">
+<!-- Page, data-page contains page name-->
+<div data-page="formSiswa" class="page no-swipeback">
+<!-- Scrollable page content-->
+
+<div class="navbar">
+   <div class="navbar-inner">
+      <div class="left">
+         <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel" style="color:black;"> <i class="icon fa fa-bars"></i></a>
+      </div>
+      <!-- We have home navbar without left link-->
+      <div class="center sliding" style="font-weight:bold;">Data Siswa</div>
+      <div class="right">
+         <!-- Right link contains only icon - additional "icon-only" class--><a href="#" data-panel="right" class="link icon-only open-panel" style="color:black;"> <i class="icon fa fa-bell-o"></i></a>
+      </div>
+   </div>
+</div>
+<div class="page-content">
+  <div>
+    <div class="content-block-title">Data Formulir</div>
+      <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Nomor Formulir</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nomor formulir" id="formNomorFormulir" disabled />
+                    <input type="hidden" id="noForm" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Nomor Telepon</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nomor telepon" id="formNomorTelepon" disabled />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    <div class="content-block-title">Jenjang Pendidikan</div>
+      <div class="list-block">
+        <form id="formJenjang">
+        <ul>
+          <li>
+            <label class="item-radio item-content">
+              <input type="radio" id="PG-TK" name="formJenjang" value="PG-TK" checked />
+              <i class="icon icon-radio"></i>
+              <div class="item-inner">
+                <div class="item-title">PG-TK</div>
+              </div>
+            </label>
+          </li>
+          <li>
+            <label class="item-radio item-content">
+              <input type="radio" id="SD" name="formJenjang" value="SD" />
+              <i class="icon icon-radio"></i>
+              <div class="item-inner">
+                <div class="item-title">SD</div>
+              </div>
+            </label>
+          </li>
+          <li>
+            <label class="item-radio item-content">
+              <input type="radio" id="SMP" name="formJenjang" value="SMP"/>
+              <i class="icon icon-radio"></i>
+              <div class="item-inner">
+                <div class="item-title">SMP</div>
+              </div>
+            </label>
+          </li>
+          <li>
+            <label class="item-radio item-content">
+              <input type="radio" id="SMA" name="formJenjang" value="SMA"/>
+              <i class="icon icon-radio"></i>
+              <div class="item-inner">
+                <div class="item-title">SMA</div>
+              </div>
+            </label>
+          </li>
+        </ul>
+      </form>
+      </div>
+    </div>
+    <div class="content-block-title">Data Siswa</div>
+        <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Nama Lengkap</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nama lengkap siswa" id="formNamaLengkap"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tempat Lahir</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Tempat lahir" id="formTempatLahir"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tanggal Lahir</div>
+                  <div class="item-input">
+                    <input type="date" placeholder="Tanggal lahir" id="formTanggalLahir"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Jenis Kelamin</div>
+                  <div class="item-input">
+                    <select id="formJenisKelamin">
+                      <option value="Laki Laki">Laki Laki</option>
+                      <option value="Perempuan">Perempuan</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Alamat</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Alamat" id="formAlamat"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Kota</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Kota" id="formKota"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Agama</div>
+                  <div class="item-input">
+                    <select id="formAgama">
+                      <option value="Islam">Islam</option>
+                      <option value="Kristen Protestan">Kristen Protestan</option>
+                      <option value="Katholik">Katholik</option>
+                      <option value="Hindu">Hindu</option>
+                      <option value="Buddha">Buddha</option>
+                      <option value="Kong Hu Cu">Kong Hu Cu</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Kewarganegaraan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Kewarganegaraan" id="formKewarganegaraan"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Nama Sekolah Asal</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nama sekolah asal" id="formNamaSekolahAsal"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Mutasi</div>
+                  <div class="item-input">
+                    <select onchange="ubahMutasi()" id="formMutasi">
+                      <option value="Tidak">Tidak</option>
+                      <option value="Ya">Ya</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div id="tempatMutasi"></div>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">Prestasi</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Prestasi" id="formPrestasi"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">*Mengetahui dari</div>
+                  <div class="item-input">
+                    <select id="formMengetahui">
+                      <option value="Teman">Teman</option>
+                      <option value="Radio/Tv">Radio/Tv</option>
+                      <option value="Iklan/Media Cetak">Iklan/Media Cetak</option>
+                      <option value="Internet">Internet</option>
+                      <option value="Lainnya">Lainnya</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content-block">
+          <div class="row">
+            <div class="col-100">
+              <input type="Submit" onclick="updateFormSiswa();" value="Ubah" class="button button-big button-fill color-green"/>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+<!-- Path to Framework7 Library JS-->

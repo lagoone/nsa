@@ -1,0 +1,280 @@
+<!-- Views-->
+<div class="views">
+<!-- Your main view, should have "view-main" class-->
+<div class="view view-main">
+<!-- Top Navbar-->
+<!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+<div class="pages navbar-through toolbar-through">
+<!-- Page, data-page contains page name-->
+<div data-page="formOrtu" class="page no-swipeback">
+<!-- Scrollable page content-->
+
+<div class="navbar">
+   <div class="navbar-inner">
+      <div class="left">
+         <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel" style="color:black;"> <i class="icon fa fa-bars"></i></a>
+      </div>
+      <!-- We have home navbar without left link-->
+      <div class="center sliding" style="font-weight:bold;">Data Orang Tua</div>
+      <div class="right">
+         <!-- Right link contains only icon - additional "icon-only" class--><a href="#" data-panel="right" class="link icon-only open-panel" style="color:black;"> <i class="icon fa fa-bell-o"></i></a>
+      </div>
+   </div>
+</div>
+<div class="page-content">
+  <div>
+    <div class="content-block-title">Data Ayah</div>
+      <input type="hidden" id="noForm" />
+        <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Nama Ayah</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nama ayah" id="formNamaAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Alamat</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Alamat" id="formAlamatAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--<li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tempat Lahir</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Tempat lahir" id="formTempatLahirAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tanggal Lahir</div>
+                  <div class="item-input">
+                    <input type="date" placeholder="Tanggal lahir" id="formTanggalLahirAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>-->
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Pendidikan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Pendidikan" id="formPendidikanAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Agama</div>
+                  <div class="item-input">
+                    <select id="formAgamaAyah">
+                      <option value="Islam">Islam</option>
+                      <option value="Kristen Protestan">Kristen Protestan</option>
+                      <option value="Katholik">Katholik</option>
+                      <option value="Hindu">Hindu</option>
+                      <option value="Buddha">Buddha</option>
+                      <option value="Kong Hu Cu">Kong Hu Cu</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Kewarganegaraan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Kewarganegaraan" id="formKewarganegaraanAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Pekerjaan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Pekerjaan" id="formPekerjaanAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Instansi</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Instansi" id="formInstansiAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">*Handphone</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Handphone" id="formHandphoneAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+             <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Email</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Email" id="formEmailAyah"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    <div class="content-block-title">Data Ibu</div>
+        <div class="list-block">
+          <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Nama Ibu</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Nama ibu" id="formNamaIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Alamat</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Alamat" id="formAlamatIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--<li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tempat Lahir</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Tempat lahir" id="formTempatLahirIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">*Tanggal Lahir</div>
+                  <div class="item-input">
+                    <input type="date" placeholder="Tanggal lahir" id="formTanggalLahirIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>-->
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Pendidikan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Pendidikan" id="formPendidikanIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Agama</div>
+                  <div class="item-input">
+                    <select id="formAgamaIbu">
+                      <option value="Islam">Islam</option>
+                      <option value="Kristen Protestan">Kristen Protestan</option>
+                      <option value="Katholik">Katholik</option>
+                      <option value="Hindu">Hindu</option>
+                      <option value="Buddha">Buddha</option>
+                      <option value="Kong Hu Cu">Kong Hu Cu</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Kewarganegaraan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Kewarganegaraan" id="formKewarganegaraanIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Pekerjaan</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Pekerjaan" id="formPekerjaanIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Instansi</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Instansi" id="formInstansiIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">*Handphone</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Handphone" id="formHandphoneIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+             <li>
+              <div class="item-content">
+                <div class="item-inner"> 
+                  <div class="item-title label">Email</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="Email" id="formEmailIbu"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content-block">
+          <div class="row">
+            <div class="col-100">
+              <input type="Submit" onclick="updateFormOrtu();" value="Ubah" class="button button-big button-fill color-green"/>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+<!-- Path to Framework7 Library JS-->
