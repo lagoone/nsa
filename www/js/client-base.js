@@ -1,7 +1,4 @@
-//var urlnya="http://localhost/tamiyaku-server";
-//var urlnya="http://bts.neoalitcahya.com";
 var urlnya="http://bts.neoalitcahya.com";
-//var urlnya = "http://192.168.1.7:80/tamiyaku-server"
 var globalListKelas = [];
 var globalCookie = [];
 var globalLapak = [];

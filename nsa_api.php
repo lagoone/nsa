@@ -563,7 +563,7 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
 														if(mysql_num_rows($result)==0)
 														{
 															//INSERT DATA BARU
-															$sql="INSERT INTO form_ptab (`date`,`update`,no_form,jenjang,nama_siswa,tempat_lahir,tgl_lahir,kelamin,alamat,kota,agama,warganegara,nama_sekasal,mutasi,tahu_nsa) VALUES ('$tanggal','$tanggal','$noForm','$formJenjang','$formNamaLengkap','$formTempatLahir','$formTanggalLahir','$formJenisKelamin','$formAlamat','$formKota','$formAgama','$formKewarganegaraan','$formNamaSekolahAsal','$formMutasi','$formMengetahui')";
+															$sql="INSERT INTO form_ptab (`date`,`update`,no_form,jenjang,nama_siswa,tempat_lahir,tgl_lahir,kelamin,alamat,kota,agama,warganegara,nama_sekasal,mutasi,prestasi,tahu_nsa) VALUES ('$tanggal','$tanggal','$noForm','$formJenjang','$formNamaLengkap','$formTempatLahir','$formTanggalLahir','$formJenisKelamin','$formAlamat','$formKota','$formAgama','$formKewarganegaraan','$formNamaSekolahAsal','$formMutasi','$formPrestasi','$formMengetahui')";
 															$result=mysql_query($sql);
 
 															$hasilResponse = array(
@@ -578,7 +578,7 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
 														else
 														{
 															//UPDATE DATA
-															$sql="UPDATE form_ptab SET `update`='$tanggal',jenjang='$formJenjang',nama_siswa='$formNamaLengkap',tempat_lahir='$formTempatLahir',tgl_lahir='$formTanggalLahir',kelamin='$formJenisKelamin',alamat='$formAlamat',kota='$formKota',agama='$formAgama',warganegara='$formKewarganegaraan',nama_sekasal='$formNamaSekolahAsal',mutasi='$formMutasi', tahu_nsa='$formMengetahui' WHERE no_form ='$noForm' ";
+															$sql="UPDATE form_ptab SET `update`='$tanggal',jenjang='$formJenjang',nama_siswa='$formNamaLengkap',tempat_lahir='$formTempatLahir',tgl_lahir='$formTanggalLahir',kelamin='$formJenisKelamin',alamat='$formAlamat',kota='$formKota',agama='$formAgama',warganegara='$formKewarganegaraan',nama_sekasal='$formNamaSekolahAsal',mutasi='$formMutasi', prestasi='$formPrestasi', tahu_nsa='$formMengetahui' WHERE no_form ='$noForm' ";
 															$result=mysql_query($sql);
 
 															$hasilResponse = array(

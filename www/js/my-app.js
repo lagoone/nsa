@@ -121,7 +121,7 @@ function ambilDataDisplay()
 				$('#tempatMutasi').html(html);
 			}
 			document.getElementById("formPrestasi").value=z.prestasi;
-			document.getElementById("formMengetahui").value=z.formMengetahui;
+			document.getElementById("formMengetahui").value=z.tahu_nsa;
 
 			document.getElementById("formNamaAyah").value=z.namaortulaki;
 			document.getElementById("formAlamatAyah").value=z.alamatortulaki;
